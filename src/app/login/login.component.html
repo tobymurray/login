@@ -1,3 +1,5 @@
-<p>
-  login works!
-</p>
+<div>
+  <button (click)="onLogIn()">Log in</button>
+  <button (click)="onLogOut()">Log out</button>
+  <br/> User logged in? <span [ngStyle]="{'background-color': isLoggedIn() ? 'green' : 'red'}">{{isLoggedIn()}}</span>
+</div>
