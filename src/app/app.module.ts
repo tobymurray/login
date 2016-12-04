@@ -10,6 +10,7 @@ import { HomeComponent } from './home/home.component';
 import { ProfileComponent } from './profile/profile.component';
 import { HeaderComponent } from './header/header.component';
 import { UserService } from './shared/user.service';
+import { AuthenticatedGuard } from './authenticated.guard';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,7 @@ import { UserService } from './shared/user.service';
     HttpModule,
     routing
   ],
-  providers: [UserService],
+  providers: [UserService, AuthenticatedGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
