@@ -4,6 +4,6 @@ import { Injectable } from '@angular/core';
 @Injectable()
 export class UserService {
 
-  constructor(private http: Http) { }cd .
+  constructor(private http: Http) { }
 
 }
